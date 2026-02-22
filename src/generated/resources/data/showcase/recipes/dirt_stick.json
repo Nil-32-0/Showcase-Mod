@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "showcase:compressed_dirt"
+    }
+  },
+  "pattern": [
+    "d",
+    "d"
+  ],
+  "result": {
+    "item": "showcase:dirt_stick"
+  },
+  "show_notification": true
+}
