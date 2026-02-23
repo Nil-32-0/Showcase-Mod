@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.nil.showcase.blocks.ShowcaseBlocks;
 import com.nil.showcase.blocks.entity.ShowcaseBlockEntities;
 import com.nil.showcase.gui.ShowcaseGuis;
+import com.nil.showcase.gui.ShowcaseItemCapsuleScreen;
 import com.nil.showcase.gui.ShowcaseSimpleChestScreen;
 import com.nil.showcase.items.ShowcaseCreativeTab;
 import com.nil.showcase.items.ShowcaseItems;
@@ -98,6 +99,7 @@ public class ShowcaseMod
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
             event.enqueueWork(() -> MenuScreens.register(ShowcaseGuis.SIMPLE_CHEST.get(), ShowcaseSimpleChestScreen::new));
+            event.enqueueWork(() -> MenuScreens.register(ShowcaseGuis.ITEM_CAPSULE.get(), ShowcaseItemCapsuleScreen::new));
         }
     }
 }

@@ -15,7 +15,9 @@ public class ShowcaseCreativeTab {
         .icon(() -> ShowcaseItems.DIRT_STICK.get().getDefaultInstance())
         .displayItems((parameters, output) -> {
             output.accept(ShowcaseItems.DIRT_STICK.get());
+            output.accept(ShowcaseItems.ITEM_CAPSULE.get());
             output.accept(ShowcaseItems.COMPRESSED_DIRT.get());
+            output.accept(ShowcaseItems.SIMPLE_CHEST.get());
         }).build());
 
 

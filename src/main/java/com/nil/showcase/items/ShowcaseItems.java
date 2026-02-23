@@ -15,6 +15,7 @@ public class ShowcaseItems {
     public static final DeferredRegister<Item> REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, ShowcaseMod.MODID);
 
     public static final RegistryObject<Item> DIRT_STICK = registerDefault("dirt_stick");
+    public static final RegistryObject<Item> ITEM_CAPSULE = REGISTER.register("item_capsule", () -> new ShowcaseItemCapsule(new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_DIRT = registerBlockDefault(ShowcaseBlocks.COMPRESSED_DIRT);
     public static final RegistryObject<Item> SIMPLE_CHEST = registerBlockDefault(ShowcaseBlocks.SIMPLE_CHEST);
 

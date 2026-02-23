@@ -6,6 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,7 +29,10 @@ public class ShowcaseBlockStateProvider extends BlockStateProvider {
             if (ShowcaseMod.MODID.equals(key.getNamespace()) && !exists(key)) {
                 String name = key.getPath();
 
-                if (modelExists(key)) {
+                if (block.defaultBlockState().hasProperty(DirectionalBlock.FACING)) {
+                    directionalBlock(block, models().getExistingFile(prefix(name)));
+                }
+                else if (modelExists(key)) {
                     simpleBlock(block, models().getExistingFile(prefix(name)));
                 } else {
                     simpleBlock(block);

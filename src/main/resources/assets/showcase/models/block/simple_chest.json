@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "showcase:block/simple_chest_top",
+    "side": "showcase:block/simple_chest_side",
+    "top": "showcase:block/simple_chest_top"
+  }
+}

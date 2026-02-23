@@ -15,6 +15,9 @@ public class ShowcaseGuis {
     public static RegistryObject<MenuType<ShowcaseSimpleChestMenu>> SIMPLE_CHEST = REGISTER.register(ShowcaseSimpleChestMenu.NAME, () ->
         new MenuType<>(ShowcaseSimpleChestMenu::new, FeatureFlags.DEFAULT_FLAGS)
     );
+    public static RegistryObject<MenuType<ShowcaseItemCapsuleMenu>> ITEM_CAPSULE = REGISTER.register(ShowcaseItemCapsuleMenu.NAME, () -> 
+        new MenuType<>(ShowcaseItemCapsuleMenu::new, FeatureFlags.DEFAULT_FLAGS)
+    );
 
     public static void register(IEventBus eventBus) {
         REGISTER.register(eventBus);

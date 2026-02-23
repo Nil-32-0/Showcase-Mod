@@ -3,6 +3,8 @@
     "block.showcase.simple_chest": "Simple Chest",
     
     "item.showcase.dirt_stick": "Dirt Stick",
+    "item.showcase.item_capsule": "Item Capsule",
     
-    "menu.title.showcase.simple_chest": "Simple Chest"
+    "menu.title.showcase.simple_chest": "Simple Chest",
+    "menu.title.showcase.item_capsule": "Item Capsule"
 }

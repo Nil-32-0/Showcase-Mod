@@ -1,7 +1,30 @@
 {
   "variants": {
-    "": {
+    "facing=down": {
+      "model": "showcase:block/simple_chest",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "showcase:block/simple_chest",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "showcase:block/simple_chest",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "showcase:block/simple_chest",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
       "model": "showcase:block/simple_chest"
+    },
+    "facing=west": {
+      "model": "showcase:block/simple_chest",
+      "x": 90,
+      "y": 270
     }
   }
 }
